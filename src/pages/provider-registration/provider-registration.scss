@@ -1,0 +1,21 @@
+#content{
+    position: relative;
+    text-align: center;
+}
+
+#register-btn{
+    border-color: rgb(38, 190, 178);
+    height: 50px;
+    width: 300px;
+    margin: 25px auto 5px auto;
+    color: rgb(38, 190, 178)
+}
+
+#register-btn:hover{
+    color: rgb(38, 190, 178);
+    background-color: rgba(38, 190, 178, .1)
+}
+
+#insurance ion-label {
+    white-space: normal;
+}

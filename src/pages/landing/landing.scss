@@ -1,0 +1,48 @@
+#logo {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+//////////////////////////////////////////////////////////////////////
+#user{
+    border-color: rgb(38, 190, 178);
+    display: block;
+    height: 150px;
+    width: 300px;
+    margin: 50px auto 10px auto;
+    color: rgb(38, 190, 178)
+}
+#user:hover{
+    color: rgb(38, 190, 178);
+    background-color: rgba(38, 190, 178, .1)
+}
+//////////////////////////////////////////////////////////////////////
+#provider{
+    border-color: rgb(38, 190, 178);
+    display: block;
+    height: 150px;
+    width: 300px;
+    margin: 20px auto 20px auto;
+    color: rgb(38, 190, 178)
+}
+#provider:hover{
+    color: rgb(38, 190, 178);
+    background-color: rgba(38, 190, 178, .1)
+}
+//////////////////////////////////////////////////////////////////////
+#login{
+    border-color: rgb(38, 190, 178);
+    display: block;
+    height: 50px;
+    width: 300px;
+    margin: 0px auto 0px auto;
+    color: rgb(38, 190, 178)
+}
+#pLogin p{
+    text-align: center;
+    color: rgb(38, 190, 178)
+}
+#login:hover{
+    color: rgb(38, 190, 178);
+    background-color: rgba(38, 190, 178, .1)
+}
+//////////////////////////////////////////////////////////////////////

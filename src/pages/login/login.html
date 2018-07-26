@@ -1,18 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
 <ion-content id="main"padding>
-  <ion-card>
-    <ion-card-content>
-        <ion-item>
-          <!--Place A&HA Logo here-->Logo goes Here
-        </ion-item>
-        <ion-item id="email">
-          <ion-label floating>Email</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
-        <ion-item id="password">
-          <ion-label floating>Password</ion-label>
-          <ion-input type="password"></ion-input>
-        </ion-item>
-        <button (click)="signInClicked()" id="signin-btn" ion-button float-right>Sign In</button>
-    </ion-card-content>
-  </ion-card>
+  <ion-item no-lines>
+    <img id='logo' src="assets/imgs/logo.png">
+  </ion-item>
+  <ion-item id="email">
+    <ion-label floating>Email</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item id="password">
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+  <button outline (click)="signInClicked()" id="signin-btn" ion-button float-right>Sign In</button>
 </ion-content>

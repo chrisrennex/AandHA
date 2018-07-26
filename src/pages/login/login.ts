@@ -22,8 +22,8 @@ export class LoginPage {
     this.navCtrl.push(HomePage);
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
-  }
+  ionViewDidLoad (){
+    
+  };
 
 }
