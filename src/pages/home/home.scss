@@ -1,4 +1,28 @@
-page-home {
-
+#eventHeader{
+    text-align: center;
+    background-color: rgba(38, 190, 178, .1);
+    font-size: 1.5em;
+    border-bottom: solid 1px rgb(38, 190, 178); 
 }
 
+#eventCard {
+    margin: 15px auto 15px auto;
+    border: solid 1px;
+    border-color: rgb(38, 190, 178);
+    border-radius: 10px;
+}
+
+#bookEvent-btn{
+    background: transparent;
+    border: solid 1px;
+    border-color: rgb(38, 190, 178);
+    border-radius: 10px;
+    height: 50px;
+    margin: 25px auto 5px auto;
+    color: rgb(38, 190, 178)
+}
+
+#bookEvent-btn:hover{
+    color: rgb(38, 190, 178);
+    background-color: rgba(38, 190, 178, .1);
+}

@@ -1,0 +1,14 @@
+#newEvent {
+    background: transparent;
+    border: solid 1px;
+    border-radius: 10px;
+    border-color: rgb(38, 190, 178);
+    height: 50px;
+    margin: 25px auto 5px auto;
+    color: rgb(38, 190, 178)
+}
+
+#newEvent:hover{
+    color: rgb(38, 190, 178);
+    background-color: rgba(38, 190, 178, .1);
+}

@@ -1,0 +1,136 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>Provider Registration</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content id="main"padding>
+    <ion-item no-lines>
+      <img id='logo' src="assets/imgs/logo.png">
+    </ion-item>
+
+    <ion-item id="firstName">
+      <ion-label floating>First Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item id="lastName">
+      <ion-label floating>Last Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item id="email">
+      <ion-label floating>Email</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item id="password">
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <ion-item id="mobileNumber">
+      <ion-label floating>Mobile Number</ion-label>
+      <ion-input type="tel"></ion-input>
+    </ion-item>
+    <ion-item id="tradingName">
+      <ion-label floating>Trading Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item id="regCompName">
+      <ion-label floating>Registered Company Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Business Type</ion-label>
+      <ion-select [(ngModel)]="businessType" multiple="true">
+        <ion-option>Sport (club/coach/organisation)</ion-option>
+        <ion-option>Faciity (sport/fitness/aquatic)</ion-option>
+        <ion-option>Allied Health (service/professional)</ion-option>
+        <ion-option>Holistic Welness (naturopath/life coach)</ion-option>
+        <ion-option>Fitness Industry (personal trainer/group fitness)</ion-option>
+        <ion-option>Health Practice (clinic/centre)</ion-option>
+        <ion-option>Education/Training Provider</ion-option>
+        <ion-option>Government Department</ion-option>
+        <ion-option>Community Organisation</ion-option>
+        <ion-option>Media/Marketing/Public Relations</ion-option>
+        <ion-option>Other</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item id="abn">
+      <ion-label floating>ABN</ion-label>
+      <ion-input type="tel"></ion-input>
+    </ion-item>
+    <ion-item id="mailAddress">
+      <ion-label floating>Mailing Address</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item id="streetAddress">
+      <ion-label floating>Street Address</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item id="contactPerson">
+      <ion-label floating>Contact Person</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item id="position">
+      <ion-label floating>Title/Position</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item id="contactEmail">
+      <ion-label floating>Contact Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+    <ion-item id="businessPhone">
+      <ion-label floating>Business Phone</ion-label>
+      <ion-input type="tel"></ion-input>
+    </ion-item>
+    <ion-item id="businessMobile">
+      <ion-label floating>Business Mobile</ion-label>
+      <ion-input type="tel"></ion-input>
+    </ion-item>
+    <ion-item id="website">
+      <ion-label floating>Website</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item id="businessMotto">
+      <ion-label floating>Business Tagline/Motto</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item id="businessDesc">
+      <ion-label floating>Business Description</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item id="signature">
+      <ion-label floating>Signed</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item id="date">
+      <ion-label floating>Date</ion-label>
+      <ion-datetime type="date"></ion-datetime>
+    </ion-item>
+    <ion-item id="name">
+      <ion-label floating>Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item id="username">
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item id="email">
+      <ion-label floating>Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+    <ion-item id="password">
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <ion-item id="passwordConfirmation">
+      <ion-label floating>Password Confirmation</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <ion-list>
+      <ion-item id="insurance">
+        <ion-label>I declare that I have Public Liabiity Insurance of at least $10,000,000 in value and can provide a Certificate of Currency prior to finalisation of membership</ion-label>
+        <ion-checkbox [(ngModel)]="insurance"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+    <button full (click)="registerClicked()" id="providerRegister-btn" ion-button float-right>Register</button>
+  </ion-content>
+  

@@ -3,21 +3,22 @@
     text-align: center;
 }
 
-#signin-btn{
+#providerRegister-btn{
     background: transparent;
     border: solid 1px;
     border-color: rgb(38, 190, 178);
     border-radius: 10px;
     height: 50px;
-    margin: 25px auto 5px auto;
+    width: 300px;
+    margin: 25px auto 25px auto;
     color: rgb(38, 190, 178)
 }
 
-#signin-btn:hover{
+#providerRegister-btn:hover{
     color: rgb(38, 190, 178);
     background-color: rgba(38, 190, 178, .1);
 }
 
-#ion-item ion-label:active{
-    color: rgb(38, 190, 178);
+#insurance ion-label {
+    white-space: normal;
 }

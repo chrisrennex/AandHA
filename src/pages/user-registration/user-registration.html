@@ -1,0 +1,90 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>User Registration</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item no-lines>
+    <img id='logo' src="assets/imgs/logo.png">
+  </ion-item>
+
+  <ion-item id="firstName">
+    <ion-label floating>First Name</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item id="lastName">
+    <ion-label floating>Last Name</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item id="email">
+    <ion-label floating>Email</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item id="mobileNumber">
+    <ion-label floating>Mobile Number</ion-label>
+    <ion-input type="tel"></ion-input>
+  </ion-item>
+  <ion-item id="emergencyContactName">
+    <ion-label floating>Emergency Contact Name</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item id="emergencyContactPhone">
+    <ion-label floating>Emergency Contact Phone</ion-label>
+    <ion-input type="tel"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Age Bracket</ion-label>
+    <ion-select [(ngModel)]="ageBracket" multiple="false">
+      <ion-option>&lt; 18</ion-option>
+      <ion-option>18 - 24</ion-option>
+      <ion-option>25 - 29</ion-option>
+      <ion-option>30 - 34</ion-option>
+      <ion-option>35 - 39</ion-option>
+      <ion-option>40 - 44</ion-option>
+      <ion-option>45 - 49</ion-option>
+      <ion-option>50 - 54</ion-option>
+      <ion-option>55 - 59</ion-option>
+      <ion-option>60 - 64</ion-option>
+      <ion-option>65 - 69</ion-option>
+      <ion-option>&gt; 70</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Gender</ion-label>
+    <ion-select [(ngModel)]="gender" multiple="false">
+      <ion-option>Male</ion-option>
+      <ion-option>Female</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item id="suburb">
+    <ion-label floating>Suburb</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item id="username">
+    <ion-label floating>Username</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item id="email">
+    <ion-label floating>Email</ion-label>
+    <ion-input type="email"></ion-input>
+  </ion-item>
+  <ion-item id="password">
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+  <ion-item id="passwordConfirmation">
+    <ion-label floating>Password Confirmation</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+  <ion-list>
+    <ion-item id="insurance">
+      <ion-label>I understand it is my responsibility to advise the Activity Provider of any medical or physical conditions that may prevent me from exercising, and that I participate in exercise at my own risk.</ion-label>
+      <ion-checkbox [(ngModel)]="insurance"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+  <button full (click)="registerClicked()" id="userRegister-btn" ion-button>Register</button>
+</ion-content>
